@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Register contact";
+}
+
+<div class="text-center">
+
+<h1 class="display-4">Register contact</h1>
+
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" placeholder="Enter contact name">
+  </div>
+
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" placeholder="Enter the contact's email">
+  </div>
+  
+    <div class="form-group">
+    <label for="cell phone">Cell phone</label>
+    <input type="text" class="form-control" placeholder="Enter the contact's cell phone">
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Add</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Contact" asp-action="Index" role="button">Return</a>
+</form>
